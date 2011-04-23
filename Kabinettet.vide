@@ -1,0 +1,29 @@
+--- !Project
+name: Kabinettet
+author: Sjur Hernes
+version: 0.1
+license: /usr/share/common-licenses/GPL-2
+builder: native
+builder-options: !NativeBuilderOptions
+  debug: false
+  thread: false
+  disable-assert: false
+  disable-checking: false
+  disable-non-null: false
+  save-temps: false
+  quiet: false
+  other: 
+executable-options:
+  program: 
+  arguments: 
+  working-dir: /home/debaser/Kabinettet/
+  environment: []
+files:
+- path: COPYING
+- path: main.vala
+packages:
+- name: libgnome-2.0
+- name: glib-2.0
+- name: gtk+-2.0
+- name: sqlite3
+vapi_dir: []
